@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.js"],"names":["seyHelli","console","log"],"mappings":";;;AAMQ,aAJR,SAASA,IACPC,QAAQC,IAAI,SAHd,QAAA,oBAMAF","file":"src.a75d4526.js","sourceRoot":"../src","sourcesContent":["import './sass/main.scss';\n\nfunction seyHelli() {\n  console.log('Hello');\n}\n\nseyHelli();\n"]}
