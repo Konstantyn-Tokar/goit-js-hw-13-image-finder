@@ -15,6 +15,10 @@ refs.btnLoadMore.addEventListener('click', onLoadMore);
 
 function onSearch(event) {
   event.preventDefault();
+  if (event.currentTarget.elements.query.value === '') {
+    clearImageGalleryContainer();
+    return;
+  }
   newsApiServive.query = event.currentTarget.elements.query.value;
   newsApiServive.resetPage();
   newsApiServive.fetchImages().then(hits => {
