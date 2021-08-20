@@ -38,7 +38,10 @@ function onLoadMore() {
 
 function appendMurkupImageCard(hits) {
   refs.imageGalleryContainer.insertAdjacentHTML('beforeend', tplImageCard(hits));
-  scroll();
+  console.log(newsApiServive.page);
+  if (newsApiServive.page !== 2) {
+    scroll();
+  }
 }
 
 function scroll() {
