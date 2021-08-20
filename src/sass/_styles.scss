@@ -1,13 +1,23 @@
-.titel {
+.titel,
+.span_se {
+  color: #2121215e;
   width: 700px;
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-top: 30px;
   font-weight: 900;
-  font-size: 45px;
+  font-size: 46px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+
+.span_se {
+  color: #188ce8;
+}
+.span_e {
+  font-size: 23px;
+  color: #188ce8;
 }
 
 .gallery {
@@ -30,6 +40,7 @@
   padding: 20px 24px;
   background: #ffffff;
   border: 1px solid #eeeeee;
+  border-radius: 3px;
   border-top: none;
   box-sizing: border-box;
   &:hover {
@@ -55,16 +66,13 @@
   margin-right: 15px;
 }
 
-.search-form {
-  margin-top: 50px;
-}
-
 .input {
+  color: #188ce8;
   margin-top: 25px;
   margin-bottom: 15px;
   width: 600px;
   height: 50px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
+  border: 1px solid #21212133;
   border-radius: 4px;
   padding-left: 20px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -110,4 +118,9 @@
   -moz-border-radius: 15px;
   border-radius: 15px;
   color: #188ce8;
+}
+
+.material-iconsM,
+.stats-item {
+  color: #2121215e;
 }
