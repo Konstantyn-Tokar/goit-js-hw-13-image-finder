@@ -55,13 +55,6 @@
   }
 }
 
-.stats {
-  text-align: left;
-  &-item {
-    padding-bottom: 10px;
-  }
-}
-
 .material-icons {
   margin-right: 15px;
 }
@@ -118,6 +111,15 @@
   -moz-border-radius: 15px;
   border-radius: 15px;
   color: #188ce8;
+}
+
+.stats {
+  text-align: left;
+  &-item {
+    padding-bottom: 15px;
+    display: flex;
+    align-items: flex-end;
+  }
 }
 
 .material-iconsM,
