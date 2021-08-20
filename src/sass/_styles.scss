@@ -95,3 +95,19 @@
     background-color: #188ce8;
   }
 }
+
+.up {
+  display: block;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 64px;
+  height: 32px;
+  padding: 8px 10px 2px;
+  font-size: 16px;
+  background: #ddd;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  color: #188ce8;
+}

@@ -6,12 +6,14 @@ const refs = {
   searchForm: document.querySelector('#search-form'),
   btnLoadMore: document.querySelector('[data-action="load-more"]'),
   imageGalleryContainer: document.querySelector('.gallery'),
+  btnScrollTop: document.querySelector('.up'),
 };
 
 const newsApiServive = new NewsApiServive();
 
 refs.searchForm.addEventListener('submit', onSearch);
 refs.btnLoadMore.addEventListener('click', onLoadMore);
+refs.btnScrollTop.addEventListener('click', scrollTop);
 
 function onSearch(event) {
   event.preventDefault();
@@ -28,6 +30,9 @@ function onSearch(event) {
 }
 
 function onLoadMore() {
+  if (refs.imageGalleryContainer.textContent === '') {
+    return;
+  }
   newsApiServive.fetchImages().then(appendMurkupImageCard);
 }
 
@@ -45,4 +50,11 @@ function scroll() {
 
 function clearImageGalleryContainer() {
   refs.imageGalleryContainer.innerHTML = '';
+}
+
+function scrollTop() {
+  refs.searchForm.scrollIntoView({
+    block: 'center',
+    behavior: 'smooth',
+  });
 }
