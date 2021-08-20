@@ -7,15 +7,17 @@ export default class NewsApiServive {
     this.page = 1;
   }
 
-  fetchArticles() {
+  fetchImages() {
     // console.log(this);
-    fetch(
-      `${BASE_URL}?image_type=photo&orientation=horizontal&q=${this.searchQuery}&page=${this.page}&per_page=12&key=${API_KEY}`,
+    return fetch(
+      `${BASE_URL}?image_type=photo&orientation=horizontal&q=${this.searchQuery}&per_page=12&page=${this.page}&key=${API_KEY}`,
     )
       .then(response => response.json())
       .then(data => {
         this.incrementPage();
         // console.log(this);
+
+        return data.hits;
       });
   }
 

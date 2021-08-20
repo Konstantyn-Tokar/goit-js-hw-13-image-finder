@@ -11,13 +11,24 @@
       crossorigin="anonymous"
     />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <include src="./partials/search_form.html"></include>
-    <div>
-      <ul class="gallery"></ul>
+    <div class="container">
+      <h1 class="titel">Search pictures</h1>
+      <include src="./partials/search_form.html"></include>
     </div>
-    <button type="button" data-action="load-more">Load more</button>
+    <section class="section">
+      <div class="container">
+        <ul class="list gallery" id="btn"></ul>
+        <button class="button-load-more" type="button" data-action="load-more">Load more</button>
+      </div>
+    </section>
     <script src="./index.js"></script>
   </body>
 </html>
