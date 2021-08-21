@@ -47,7 +47,7 @@ function appendMurkupImageCard(hits) {
 function scroll() {
   refs.btnLoadMore.scrollIntoView({
     behavior: 'smooth',
-    block: 'end',
+    block: 'center',
   });
 }
 
