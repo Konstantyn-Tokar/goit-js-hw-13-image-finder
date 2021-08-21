@@ -44,20 +44,14 @@ function appendMurkupImageCard(hits) {
   }
 }
 
-function scroll() {
-  refs.btnLoadMore.scrollIntoView({
-    behavior: 'smooth',
-    block: 'center',
-  });
-}
-
 function clearImageGalleryContainer() {
   refs.imageGalleryContainer.innerHTML = '';
 }
 
+function scroll() {
+  refs.btnLoadMore.scrollIntoView({});
+}
+
 function scrollTop() {
-  refs.searchForm.scrollIntoView({
-    block: 'center',
-    behavior: 'smooth',
-  });
+  refs.searchForm.scrollIntoView({});
 }
